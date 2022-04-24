@@ -10,6 +10,7 @@
 :root {
     --pale-blue: hsl(225, 100%, 94%);
     --bright-blue: hsl(245, 75%, 52%);
+    --bright-blue-lower: hsla(245, 75%, 52%, 0.7);
     --very-pale-blue: hsl(225, 100%, 98%);
     --desaturated-blue: hsl(224, 23%, 55%);
     --dark-blue: hsl(223, 47%, 23%);
@@ -87,12 +88,13 @@ body {
 .pricing__change {
     flex-grow: 1;
     font-size: 0.8em;
-    color: var(--desaturated-blue);
+    color: var(--bright-blue);
+    font-weight: bold;
 }
 
 .pricing__change:hover { 
     text-decoration: none;
-    color: var(--bright-blue);
+    color: var(--bright-blue-lower);
 }
 
 .pricing__info-name {
@@ -113,7 +115,7 @@ body {
 }
 
 .order-content button:hover { 
-    background-color: hsla(245, 75%, 52%, 0.7);
+    background-color: var(--bright-blue-lower);
 }
 
 .cancel-link {

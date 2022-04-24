@@ -26,6 +26,7 @@ body {
     color: var(--desaturated-blue);
     line-height: 1.7;
     font-family: 'Red Hat Display', sans-serif;
+    transition: all ease-in-out 0.5s;
 }
 
 .container {
@@ -86,6 +87,12 @@ body {
 .pricing__change {
     flex-grow: 1;
     font-size: 0.8em;
+    color: var(--desaturated-blue);
+}
+
+.pricing__change:hover { 
+    text-decoration: none;
+    color: var(--bright-blue);
 }
 
 .pricing__info-name {
@@ -98,15 +105,24 @@ body {
     border-radius: 10px;
     cursor: pointer;
     background: var(--bright-blue);
-    padding: 20px;
+    padding: 15px;
     color: var(--pale-blue);
     font-weight: 700;
     box-shadow: 0 10px 40px var(--desaturated-blue);
     margin-bottom: 20px;
 }
 
+.order-content button:hover { 
+    background-color: hsla(245, 75%, 52%, 0.7);
+}
+
 .cancel-link {
+    cursor: pointer;
+}
+
+.cancel-link:hover {
     font-weight: 700;
+    color: var(--dark-blue);
 }
 
 

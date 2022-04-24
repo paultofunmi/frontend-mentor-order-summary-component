@@ -1,0 +1,120 @@
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0px;
+    font-size: 16px;    
+    background: var(--pale-blue);
+    color: var(--desaturated-blue);
+    line-height: 1.7;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.container {
+    border-radius: 15px;
+    background: #FFF;
+    margin: 4em auto;
+    width: 90%;
+    max-width: 350px;    
+}
+
+.hero, .hero img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.order-content  {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.order-content h1 {
+    font-weight: 900;
+    font-size: 1.3em;
+    color: var(--dark-blue);
+    margin-bottom: 15px;
+}
+
+.order-content p.text {
+    margin-bottom: 15px;
+}
+
+.pricing {
+    display: flex;
+    align-items: center;
+    background: var(--very-pale-blue);
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+.music-icon {
+    flex-grow: 1;
+    margin-left: -10px;
+}
+
+.pricing__info {
+    padding-left: 10px;
+    text-align: left;
+    flex-grow: 2;
+}
+
+.pricing__change {
+    flex-grow: 1;
+    font-size: 0.8em;
+}
+
+.pricing__info-name {
+    color: var(--dark-blue);
+    font-weight: 700;
+}
+
+.order-content button { 
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    background: var(--bright-blue);
+    padding: 20px;
+    color: var(--pale-blue);
+    font-weight: 700;
+    box-shadow: 0 10px 40px var(--desaturated-blue);
+    margin-bottom: 20px;
+}
+
+.cancel-link {
+    font-weight: 700;
+}
+
+
+@media (min-width: 570px) {
+    body {
+        background-image: url(images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 100%;
+    }
+}
